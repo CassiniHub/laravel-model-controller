@@ -15,4 +15,11 @@ class HomeController extends Controller
             'movies'
         ));
     }
+
+    public function movie($id) {
+        $movie = Movies::findOrFail($id);
+        return view('pages.movie', compact(
+            'movie'
+        ));
+    }
 }
