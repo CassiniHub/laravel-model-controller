@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    @include('components.header')
-
-    @yield('content')
+    <div class="wrapper">
+        @include('components.header')
     
-    @include('components.footer')
+        @yield('content')
+        
+        @include('components.footer')
+    </div>
 </body>
 </html>

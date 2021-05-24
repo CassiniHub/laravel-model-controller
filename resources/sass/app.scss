@@ -1,1 +1,30 @@
-//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+}
